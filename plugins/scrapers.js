@@ -521,7 +521,7 @@ Module({
 	var {data} = await axios(`http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`);
 	if (data.Response != 'True') return await message.sendReply("_"+data.Error+"_");
 	let msg = '';
-	msg += '_Title_     : *' + data.Title + '*\n\n';
+	msg += '✅ _Title_     : *' + data.Title + '*\n\n';
 	msg += '_Year_      : *' + data.Year + '*\n\n';
 	msg += '_Rated_     : *' + data.Rated + '*\n\n';
 	msg += '_Released_  : *' + data.Released + '*\n\n';
